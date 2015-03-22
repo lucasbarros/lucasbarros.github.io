@@ -1,0 +1,10 @@
+/** Site footer */
+.page-footer {
+  @extend .page-content;
+  border-top: 1px solid $color-grey-light;
+}
+
+.footer-heading {
+  font-size: 18px;
+  margin-bottom: $grid-gutter / 2;
+}

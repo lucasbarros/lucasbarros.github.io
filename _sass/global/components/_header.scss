@@ -1,0 +1,62 @@
+/** Page header */
+.page-header {
+}
+
+/** Home header */
+.home-header {
+  background: #64aec0;
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  
+  .header-description {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+  }
+  
+  .header-heading {
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: 0;
+    padding: 0 0 0.25rem;
+    text-transform: lowercase;
+    
+    a:hover {
+      text-decoration: none;
+    }
+  }
+  
+  .header-subheading {
+    font-size: 3rem;
+    line-height: 1.25;
+    margin: 0 auto;
+    max-width: 75%;
+    padding: $padding-base 0;
+    position: relative;
+    
+    &:after {
+      border-top: 1px solid #fff;
+      content: "";
+      display: block;
+      left: 50%;
+      margin-left: -15%;
+      position: absolute;
+      width: 30%;
+    }
+    
+    &:after {
+      bottom: 0;
+    }
+  }
+  
+  a {
+    color: #fff;
+  }
+}

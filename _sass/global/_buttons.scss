@@ -1,0 +1,13 @@
+.btn {
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  display: inline-block;
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  
+  @include touch-action(manipulation);
+  @include user-select(none);
+}

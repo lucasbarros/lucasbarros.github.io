@@ -1,0 +1,19 @@
+{
+  "name": "lucasbarros.github.io",
+  "version": "0.0.0",
+  "homepage": "lucasbarros.github.io",
+  "authors": [
+    "Lucas Barros <lucsbarros@gmail.com>"
+  ],
+  "description": "lucasbarros blog",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}

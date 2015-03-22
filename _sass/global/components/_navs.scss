@@ -1,0 +1,86 @@
+.page-nav {
+  .btn-toggle {
+    float: right;
+  }
+  
+  .nav-menu {
+    float: right;
+  } 
+}
+
+$toggle-size: 15px;
+$icon-bar-size: $toggle-size / 5;
+
+.btn-toggle {
+  .toggle-icon {
+    height: $icon-bar-size * 5;
+    position: relative;
+    width: 2rem;
+  
+    .bar {
+      background: #fff;
+      height: $icon-bar-size;
+      left: 0;
+      position: absolute;
+      right: 0;
+
+      @include transition(all 300ms ease-in-out);
+      @include transform(translate3d(0, 0, 0));
+
+      &:nth-child(1) {
+        opacity: 1;
+        top: 0;
+      }
+
+      &:nth-child(2) {
+        top: $icon-bar-size * 2;
+      }
+
+      &:nth-child(3) {
+        top: $icon-bar-size * 4;
+      }
+
+      &:nth-child(4) {
+        opacity: 0;
+        top: $icon-bar-size * 6;
+      }
+    }
+  }
+  
+  &:hover {
+    .toggle-icon {
+      .bar {
+        &:nth-child(1) {
+          opacity: 0;
+          @include transform(translate3d(0, ($icon-bar-size * -2), 0));
+        }
+
+        &:nth-child(2) {
+          @include transform(translate3d(0, ($icon-bar-size * -2), 0));
+        }
+
+        &:nth-child(3) {
+          @include transform(translate3d(0, ($icon-bar-size * -2), 0));
+        }
+
+        &:nth-child(4) {
+          opacity: 1;
+          @include transform(translate3d(0, ($icon-bar-size * -2), 0));
+        }
+      }
+    }
+  }
+}
+
+.nav-menu {
+  margin: 0;
+  
+  li {
+    display: inline-block;
+  }
+  
+  a {
+    display: inline-block;
+    padding: 1rem;
+  }
+}

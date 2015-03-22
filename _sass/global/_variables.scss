@@ -1,0 +1,31 @@
+// Our variables
+$font-size-root:       14px;
+
+$font-size-base:       1rem;
+$font-size-small:      $font-size-base * 0.875;
+$line-height-base:     1.5;
+
+$font-family-base:     Helvetica, Arial, sans-serif;
+$font-family-serif:    'Sorts Mill Goudy', serif;
+
+$heading-font-family:  $font-family-serif;
+$heading-font-weight:  300;
+
+$grid-gutter:          30px;
+$padding-base:          ($grid-gutter * 0.5);
+
+$text-color:           #111;
+$body-color:           #fdfdfd;
+$page-color:           $body-color;
+
+$color-primary:        #2a7ae2;
+
+$color-grey:           #828282;
+$color-grey-light:     lighten($color-grey, 40%);
+$color-grey-dark:      darken($color-grey, 25%);
+
+// Width of the content area
+$content-width:        800px;
+
+$on-palm:              600px;
+$on-laptop:            800px;

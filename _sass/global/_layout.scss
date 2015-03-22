@@ -1,0 +1,12 @@
+/** Page content */
+.page-content {
+  background: $page-color;
+  padding: $grid-gutter 0;
+  position: relative;
+  z-index: 2;
+}
+
+@import 
+  "components/header",
+  "components/footer",
+  "components/navs";
