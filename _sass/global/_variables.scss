@@ -3,6 +3,7 @@ $font-size-root:       14px;
 
 $font-size-base:       1rem;
 $font-size-small:      $font-size-base * 0.875;
+$font-size-large:      $font-size-base * 1.5;
 $line-height-base:     1.5;
 
 $font-family-base:     Helvetica, Arial, sans-serif;
@@ -11,18 +12,24 @@ $font-family-serif:    'Sorts Mill Goudy', serif;
 $heading-font-family:  $font-family-serif;
 $heading-font-weight:  300;
 
+$section-title-color:  #999;
+$section-title-size:   $font-size-large;
+
 $grid-gutter:          30px;
-$padding-base:          ($grid-gutter * 0.5);
+$padding-base:         ($grid-gutter * 0.5);
 
 $text-color:           #111;
 $body-color:           #fdfdfd;
 $page-color:           $body-color;
 
-$color-primary:        #2a7ae2;
+$color-primary:        #2f3e4d;
 
 $color-grey:           #828282;
 $color-grey-light:     lighten($color-grey, 40%);
 $color-grey-dark:      darken($color-grey, 25%);
+
+$caption-color:        #999;
+$caption-font-size:    $font-size-small;
 
 // Width of the content area
 $content-width:        800px;

@@ -6,6 +6,37 @@
   z-index: 2;
 }
 
+.section-title {
+  color: $section-title-color;
+  font-size: $section-title-size;
+  font-style: italic;
+}
+
+/** Post list */
+.post-list {
+  margin: 0;
+  
+  .post-item {
+    display: block;
+    padding: $padding-base 0;
+  }
+  
+  .post-title {
+    font-size: 2rem;
+  }
+  
+  .post-excerpt {
+  }
+  
+  .post-meta {
+    color: $caption-color;
+    font-size: $caption-font-size;
+  }
+  
+  .post-link {
+  }
+}
+
 @import 
   "components/header",
   "components/footer",
